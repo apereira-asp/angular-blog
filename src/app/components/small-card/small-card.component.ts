@@ -1,17 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component , Input, OnInit} from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
-  imports: [],
+  imports: [CommonModule, RouterModule],
   templateUrl: './small-card.component.html',
   styleUrl: './small-card.component.css'
 })
 export class SmallCardComponent implements OnInit {
 
   @Input()
-  photoCover: string=""
+  photoCover:string=""
   @Input()
-  cardTitle: string=""
+  cardTitle:string=""
+
+  @Input()
+  Id:string="0"
+
   constructor() {}
 
   ngOnInit(): void {
