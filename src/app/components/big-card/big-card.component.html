@@ -1,19 +1,17 @@
 <div class="container__big-card">
     <div class="big-card__photo">
-        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2667690/capsule_616x353.jpg?t=1725007623" 
+        <img src="{{ photoCover }}" 
         alt=""
         height="200px"
         srcset=""> 
     </div>
     <div class="big-card__title">
-        <h1><a href="#">Saiu a nova versão do Angular</a></h1>
+        <h1><a href="#">{{ cardTitle }}</a></h1>
     </div>
     <div class="big-card__description">
         <p>
             <a href="#">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla finibus eros sit amet ante aliquet fringilla. 
-                Maecenas pellentesque neque nulla, at molestie massa posuere sit amet. Nulla semper ante fermentum, sollicitudin nisl vitae, pharetra nibh. 
-                Ut vulputate, tortor a tincidunt convallis, elit velit tristique tortor, vel ultrices lectus urna vel mi. Sed ornare euismod leo, vel eleifend est pharetra sed.
+                {{ cardDescription }}
             </a>
         </p>   
     </div> 
